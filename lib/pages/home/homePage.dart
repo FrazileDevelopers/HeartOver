@@ -58,9 +58,10 @@ class _HomePageState extends State<HomePage> {
                 MaterialButton(
                   height: mq.size.height * .08,
                   minWidth: mq.size.width * .3,
-                  onPressed: () => Navigator.pushNamed(
+                  onPressed: () => Navigator.pushNamedAndRemoveUntil(
                     context,
                     Heart.signup,
+                    (route) => true,
                   ),
                   child: Text(
                     'Sign Up'.toUpperCase(),
@@ -74,9 +75,10 @@ class _HomePageState extends State<HomePage> {
                 MaterialButton(
                   height: mq.size.height * .08,
                   minWidth: mq.size.width * .3,
-                  onPressed: () => Navigator.pushNamed(
+                  onPressed: () => Navigator.pushNamedAndRemoveUntil(
                     context,
-                    Heart.login,
+                    Heart.feeds,
+                    (route) => true,
                   ),
                   child: Text(
                     'Log in'.toUpperCase(),
@@ -86,7 +88,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   color: Heart.btnbg,
-                )
+                ),
               ],
             ),
             Row(

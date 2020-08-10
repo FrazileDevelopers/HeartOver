@@ -18,6 +18,11 @@ class _ConfigPageState extends State<ConfigPage> {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Heart Over',
+        theme: ThemeData(
+          iconTheme: IconThemeData(
+            color: Colors.white,
+          ),
+        ),
         initialRoute: Heart.initial,
         routes: Routes.routes(),
       ),

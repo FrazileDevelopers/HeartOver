@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:heartover/constants/gradients.dart';
 
 class Feeds extends StatefulWidget {
   @override
@@ -8,6 +9,15 @@ class Feeds extends StatefulWidget {
 class _FeedsState extends State<Feeds> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    final mq = MediaQuery.of(context);
+    return Scaffold(
+      body: Container(
+        height: mq.size.height,
+        width: mq.size.width,
+        decoration: BoxDecoration(
+          gradient: Gradients.bgGradient,
+        ),
+      ),
+    );
   }
 }
