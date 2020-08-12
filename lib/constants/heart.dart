@@ -14,4 +14,7 @@ class Heart {
   //* Default Colors
   static const Color btnbg = Colors.white;
   static const Color btntext = Color(0xFFF77062);
+
+  //* HTTP URL
+  static const String baseURL = '';
 }
