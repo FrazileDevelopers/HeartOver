@@ -110,7 +110,24 @@ class _FeedsState extends State<Feeds> {
                       ),
                     ],
                   ),
-                  // CachedNetworkImage(imageUrl: 'null')
+                  Padding(
+                    padding: const EdgeInsets.only(top: 10.0),
+                    child: Center(
+                      child: CachedNetworkImage(
+                        imageUrl:
+                            'http://heartover.com/tictok/API//upload/thum/1593671003_1327873571.jpg',
+                        placeholder: (context, url) =>
+                            CircularProgressIndicator(),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(
+                      top: 10.0,
+                      bottom: 10.0,
+                    ),
+                    child: Text('Mohit'),
+                  ),
                 ],
               ),
             ),
